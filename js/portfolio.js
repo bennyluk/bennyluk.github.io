@@ -343,7 +343,7 @@
 				},
 		    dataType: "json",
 				success: function() {
-					$submit.attr("value", "Reply from 127.0.0.1. Will reply ASAP.");
+					$submit.attr("value", "Message Sent !");
 				},
 				error: function() {
 					$submit.attr("value", "Ping Timed Out. Email at (" + email + ")");
@@ -364,7 +364,7 @@
 	});
 
 	Portfolio.init();
-	
+
 	var $menu = $("#menu");
 	var $mobileMenu = $("#mobile-menu");
 	$menu.find(".menu-item").on("mouseup", function(event) {
