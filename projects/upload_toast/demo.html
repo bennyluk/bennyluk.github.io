@@ -1,0 +1,183 @@
+<style>
+
+</style>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+<style>
+	body {
+		background: navajowhite;
+	}
+
+</style>
+
+	<div id="demo" class="upload-toast-manager">
+		<div class="upload-toast-manager-header">
+			<div class="upload-toast-manager-title">Upload Toast Manager</div>
+			<div class="upload-toast-manager-controls">
+				<div class="upload-toast-manager-minimize-btn upload-toast-manager-control">
+					<i class="fa fa-chevron-down fa-fw" aria-hidden="true"></i>
+				</div>
+				<div class="upload-toast-manager-close-btn upload-toast-manager-control">
+					<i class="fa fa-times fa-fw" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+		<div class="upload-toast-manager-content">
+
+			<!---
+			<div class="upload-toast-manager-toast">
+				<img class="upload-toast-manager-toast-image" src="bg.jpg" alt="">
+				<div class="upload-toast-manager-toast-title">laptop.jpg</div>
+				<div class="upload-toast-manager-toast-action">
+					<i class="fa fa-check fa-fw" aria-hidden="true"></i>
+					<i class="fa fa-search fa-fw" aria-hidden="true"></i>
+					<i class="fa fa-spinner fa-pulse fa-fw upload-toast-manager-toast-loading"></i>
+				</div>
+				<div class="upload-toast-manager-toast-loading-bar"></div>
+			</div>
+			<div class="upload-toast-manager-toast upload-toast-manager-toast-done">
+				<img class="upload-toast-manager-toast-image" src="bg.jpg" alt="">
+				<div class="upload-toast-manager-toast-title">laptop.jpg</div>
+				<div class="upload-toast-manager-toast-action">
+					<i class="fa fa-check fa-fw" aria-hidden="true"></i>
+					<i class="fa fa-search fa-fw" aria-hidden="true"></i>
+					<i class="fa fa-spinner fa-pulse fa-fw upload-toast-manager-toast-loading"></i>
+				</div>
+			</div>
+			---->
+
+		</div>
+	</div>
+
+	<div id="demo3" class="upload-toast-manager" style="display: none;">
+		<div class="upload-toast-manager-header">
+			<div class="upload-toast-manager-title">2 Uploads Complete</div>
+			<div class="upload-toast-manager-controls">
+				<div class="upload-toast-manager-minimize-btn upload-toast-manager-control">
+					<i class="fa fa-chevron-down fa-fw" aria-hidden="true"></i>
+				</div>
+				<div class="upload-toast-manager-close-btn upload-toast-manager-control">
+					<i class="fa fa-times fa-fw" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+		<div class="upload-toast-manager-content">
+
+			<!---
+			<div class="upload-toast-manager-toast">
+				<img class="upload-toast-manager-toast-image" src="bg.jpg" alt="">
+				<div class="upload-toast-manager-toast-title">laptop.jpg</div>
+				<div class="upload-toast-manager-toast-action">
+					<i class="fa fa-check fa-fw" aria-hidden="true"></i>
+					<i class="fa fa-search fa-fw" aria-hidden="true"></i>
+					<i class="fa fa-spinner fa-pulse fa-fw upload-toast-manager-toast-loading"></i>
+				</div>
+				<div class="upload-toast-manager-toast-loading-bar"></div>
+			</div>
+			<div class="upload-toast-manager-toast upload-toast-manager-toast-done">
+				<img class="upload-toast-manager-toast-image" src="bg.jpg" alt="">
+				<div class="upload-toast-manager-toast-title">laptop.jpg</div>
+				<div class="upload-toast-manager-toast-action">
+					<i class="fa fa-check fa-fw" aria-hidden="true"></i>
+					<i class="fa fa-search fa-fw" aria-hidden="true"></i>
+					<i class="fa fa-spinner fa-pulse fa-fw upload-toast-manager-toast-loading"></i>
+				</div>
+			</div>
+			---->
+
+		</div>
+	</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+
+<link href="upload-toast.css" rel="stylesheet" type="text/css">
+<script src="upload-toast.js"></script>
+
+<script>
+	$(function() {
+		uploadToastManager = new UploadToastManager({
+			el: $("#demo").get(0)
+		});
+
+		toast = uploadToastManager.addToast({
+			label: "laptop.jpg",
+			img: "bg.jpg"
+		});
+
+		var x = 0;
+		var limit = 100;
+		var timeout = setInterval(function() {
+			if(x <= limit) {
+				toast.progress(x);
+				x += 20;
+
+			} else {
+				// toast.progress(50 + "%");
+				clearTimeout(timeout);
+			}
+		}, 200);
+
+
+
+		// toast.done();
+	});
+
+	$(function() {
+		/*
+		var uploadToastManager1 = new UploadToastManager({
+			el: $("#demo3").get(0)
+		});
+		*/
+/*
+		var toast1 = uploadToastManager1.addToast({
+			label: "laptop2.jpg",
+			img: "bg.jpg"
+		});*/
+
+/*
+		var x = 0;
+		var limit = 100;
+		var timeout = setInterval(function() {
+			if(x <= limit) {
+				toast.progress(x);
+				x += 20;
+
+			} else {
+				// toast.progress(50 + "%");
+				clearTimeout(timeout);
+			}
+		}, 200);
+*/
+/*
+console.log(uploadToastManager1.getToasts());
+*/
+
+		// toast.done();
+	});
+
+	function showLoading() {
+		var el = $(".upload-toast-manager-toast-loading-bar");
+		var x = 0;
+		var limit = 350;
+		var timeout = setInterval(function() {
+			if(x < limit) {
+				x += 5;
+				el.width(x);
+			} else {
+				clearTimeout(timeout);
+			}
+			console.log("dsds");
+		}, 200);
+	};
+
+
+
+</script>

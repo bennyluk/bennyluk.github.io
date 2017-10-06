@@ -1,0 +1,72 @@
+<html>
+	<head>
+	<style>
+
+	</style>
+
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.css" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+		<link href="whats-new.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+
+		<script src="whats-new.js"></script>
+
+		<script>
+
+			$(function() {
+				whatsNew = new WhatsNew([
+					{
+						title: "First Slide",
+						img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Big_Bear_Valley%2C_California.jpg/1200px-Big_Bear_Valley%2C_California.jpg",
+						content: "First CoFirst ContentFirst ContentFirst ContentFirst ContentFirst <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>tentFirFirst ContentFirst ContentFirst ContentFirst ContentFirst ContentFirst ContentFirst ContentFirst ContentFirst ContentFirst ContentFirst ContentFirst ContentFirst ContentFirst Contentst ContentFirst ContentFirst ContentFirst ContentFirst ContentFirst ContentFirst Contentntent",
+						onStart: function() {
+							console.log("start");
+						},
+						onEnd: function() {
+							console.log("onEnd");
+						}
+					},
+					{
+						title: "Second Slide",
+						img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Big_Bear_Valley%2C_California.jpg/1200px-Big_Bear_Valley%2C_California.jpg",
+						content: "Second Content",
+						custom: "fdfdfd"
+					},
+					{
+						title: "3 Slide",
+						img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Big_Bear_Valley%2C_California.jpg/1200px-Big_Bear_Valley%2C_California.jpg",
+						content: "3 Content"
+					},
+					{
+						title: "4 Slide",
+						img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Big_Bear_Valley%2C_California.jpg/1200px-Big_Bear_Valley%2C_California.jpg",
+						content: "4 Content"
+					},
+					{
+						title: "5 Slide",
+						img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Big_Bear_Valley%2C_California.jpg/1200px-Big_Bear_Valley%2C_California.jpg",
+						content: "5 Content"
+					}
+				], {
+					width: 550,
+					height: 700,
+					onSlideChange: function(e,r,t) {
+						console.log(e);
+					},
+				}).start();
+			});
+
+
+		</script>
+	</body>
+</html>

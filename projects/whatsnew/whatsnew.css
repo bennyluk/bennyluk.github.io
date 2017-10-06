@@ -1,0 +1,155 @@
+.whatsnew-overlay {
+	display: none;
+    z-index: 9000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.7;
+}
+
+.whatsnew {
+	display: none;
+	z-index: 9000;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background: #FFF;
+	font-family: sans-serif;
+	height: 500px;
+    width: 350px;
+	color: #000;
+}
+
+.whatsnew-close {
+	position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 5;
+    cursor: pointer;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.whatsnew-close:hover {
+	color: #5d5d5d;
+	text-decoration: none;
+}
+
+.whatsnew-slide-title {
+	padding: 20px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    width: 100%;
+    box-sizing: border-box;
+	border-bottom: 1px solid #f1eeee;
+}
+
+.whatsnew-slides-container {
+    text-align: center;
+	position: relative;
+}
+
+.whatsnew-slide {
+	display: none;
+	position: absolute;
+    top: 0;
+    left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.whatsnew-slide-content {
+	height: 391px;
+    overflow: auto;
+    padding: 25px 15px;
+    box-sizing: border-box;
+}
+
+.whatsnew-img {
+    max-width: 150px;
+    max-height: 150px;
+	margin-bottom: 20px;
+}
+
+.whatsnew-content {
+	line-height: 1.5;
+	font-size: 16px;
+}
+
+.whatsnew-footer {
+	position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.whatsnew-btn {
+	cursor: pointer;
+    text-decoration: none;
+    background-color: #1d7a98;
+    height: 50px;
+    color: #FFF;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+	font-size: 16px;
+}
+
+.whatsnew-btn:hover {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.whatsnew-next {
+	width: 75%;
+}
+
+.whatsnew-prev {
+	width: 25%;
+}
+
+.whatsnew-full-width-btn {
+	width: 100%;
+}
+
+.whatsnew-btn:hover {
+	background-color: #359ebf;
+}
+
+.whatsnew-nav {
+	list-style-type: none;
+    position: absolute;
+    padding: 0;
+    top: -20px;
+    text-align: center;
+    margin: 0 auto;
+	width: 100%;
+}
+
+.whatsnew-nav-item {
+	display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin: 0 5px;
+	cursor: pointer;
+	box-sizing: content-box;
+}
+
+.whatsnew-nav-item:hover {
+	background-color: #d3d3d3;
+}
+
+.whatsnew-nav-item.active {
+	background-color: #1d7a98;
+    border-color: #1d7a98;
+}
