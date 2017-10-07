@@ -95,7 +95,6 @@
 		},
 
 		transitionOut: function (callback) {
-			var self = this;
 			this.$el.stop().fadeOut(function() {
 				if(_.isFunction(callback)) {
 					callback();
@@ -179,7 +178,7 @@
 		template: Templates.home,
 
 		render: function() {
-			this.el.innerHTML = this.template()
+			this.el.innerHTML = this.template();
 			return Portfolio.Extensions.PageView.prototype.render.apply(this, arguments);
 		}
 	});
@@ -190,7 +189,7 @@
 		template: Templates.about,
 
 		render: function() {
-			this.el.innerHTML = this.template()
+			this.el.innerHTML = this.template();
 			return Portfolio.Extensions.PageView.prototype.render.apply(this, arguments);
 		}
 	});
@@ -306,7 +305,7 @@
 		},
 
 		render: function() {
-			this.el.innerHTML = this.template()
+			this.el.innerHTML = this.template();
 			return Portfolio.Extensions.PageView.prototype.render.apply(this, arguments);
 		}
 	});
@@ -321,7 +320,7 @@
 		},
 
 		render: function() {
-			this.el.innerHTML = this.template()
+			this.el.innerHTML = this.template();
 			return Portfolio.Extensions.PageView.prototype.render.apply(this, arguments);
 		},
 
@@ -358,7 +357,7 @@
 		template: Templates.notFound,
 
 		render: function() {
-			this.el.innerHTML = this.template()
+			this.el.innerHTML = this.template();
 			return Portfolio.Extensions.PageView.prototype.render.apply(this, arguments);
 		}
 	});

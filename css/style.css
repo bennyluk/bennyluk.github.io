@@ -1,6 +1,5 @@
 * {
 	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -94,11 +93,17 @@ img {
 	width: 90px;
 	height: 90px;
 	margin: 0 0 0 15px;
+	-webkit-transition: -webkit-transform 0.5s ease;
+	transition: -webkit-transform 0.5s ease;
+	-o-transition: transform 0.5s ease;
 	transition: transform 0.5s ease;
+	transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
 #logo:hover {
-	transform: rotate(5deg);
+	-webkit-transform: rotate(5deg);
+	    -ms-transform: rotate(5deg);
+	        transform: rotate(5deg);
 }
 
 #nav {
@@ -145,6 +150,8 @@ img {
     background: #1f9c9c;
     display: block;
     width: 10px;
+    -webkit-transition: width 0.25s ease-out;
+    -o-transition: width 0.25s ease-out;
     transition: width 0.25s ease-out;
 }
 
@@ -157,6 +164,8 @@ img {
 #content {
 	position: relative;
 	z-index: 5;
+	-webkit-transition: height 0.5s ease-in-out;
+	-o-transition: height 0.5s ease-in-out;
 	transition: height 0.5s ease-in-out;
 	width: 100%;
 	min-height: 5px;
@@ -265,11 +274,17 @@ img {
 
 /* About */
 #about .page-icon {
+	-webkit-transition: -webkit-transform 1s ease;
+	transition: -webkit-transform 1s ease;
+	-o-transition: transform 1s ease;
 	transition: transform 1s ease;
+	transition: transform 1s ease, -webkit-transform 1s ease;
 }
 
 #about .page-icon:hover {
-	transform: translateY(-20px)
+	-webkit-transform: translateY(-20px);
+	    -ms-transform: translateY(-20px);
+	        transform: translateY(-20px)
 }
 
 #me {
@@ -284,11 +299,17 @@ img {
 
 /* Projects */
 #projects-icon {
+	-webkit-transition: -webkit-transform 0.5s ease;
+	transition: -webkit-transform 0.5s ease;
+	-o-transition: transform 0.5s ease;
 	transition: transform 0.5s ease;
+	transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
 #projects-icon:hover {
-	transform: rotate(15deg);
+	-webkit-transform: rotate(15deg);
+	    -ms-transform: rotate(15deg);
+	        transform: rotate(15deg);
 }
 
 #projects {
@@ -345,7 +366,8 @@ img {
 	width: 80%;
   height: 80%;
   margin: 5% 0;
-	box-shadow: 0 0 13px 5px rgba(0,0,0,0.35);
+	-webkit-box-shadow: 0 0 13px 5px rgba(0,0,0,0.35);
+	        box-shadow: 0 0 13px 5px rgba(0,0,0,0.35);
 }
 
 .project-strip-bg.project-video-bg {
@@ -390,11 +412,17 @@ img {
 /* Skills */
 
 #skills-icon {
+	-webkit-transition: -webkit-transform 0.5s ease;
+	transition: -webkit-transform 0.5s ease;
+	-o-transition: transform 0.5s ease;
 	transition: transform 0.5s ease;
+	transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
 #skills-icon:hover {
-	transform: scale(1.25);
+	-webkit-transform: scale(1.25);
+	    -ms-transform: scale(1.25);
+	        transform: scale(1.25);
 }
 
 #skills {
@@ -485,7 +513,8 @@ img {
   display: inline-block;
   margin: 20px 10px;
 	border: 1px solid #181819;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 2px;
 }
 
@@ -505,12 +534,20 @@ img {
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
-	transform: scale(1);
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
+	-webkit-transition: -webkit-transform 0.5s ease;
+	transition: -webkit-transform 0.5s ease;
+	-o-transition: transform 0.5s ease;
 	transition: transform 0.5s ease;
+	transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
 .grid-item:hover .grid-item-img {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
 }
 
 .grid-item-caption {
@@ -540,11 +577,17 @@ h2 {
 
 /* Contact */
 #contact-icon {
+	-webkit-transition: -webkit-transform 0.5s ease;
+	transition: -webkit-transform 0.5s ease;
+	-o-transition: transform 0.5s ease;
 	transition: transform 0.5s ease;
+	transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
 #contact-icon:hover {
-	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	    -ms-transform: rotate(360deg);
+	        transform: rotate(360deg);
 }
 
 #contact-form {
@@ -605,7 +648,9 @@ h2 {
 
 .vert-center {
 	top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 .btn {
@@ -622,6 +667,8 @@ h2 {
 	letter-spacing: 2px;
 	text-decoration: none;
 	padding: 5px 45px;
+	-webkit-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
 	transition: all 0.25s ease;
 }
 
