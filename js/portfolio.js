@@ -1,6 +1,3 @@
-/*
-"Fredericka the Great Toolbar" font for logo. put a fuckin border on it with it.
-*/
 (function() {
 	var Portfolio = {
 		Views: {},

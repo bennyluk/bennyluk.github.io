@@ -38,7 +38,7 @@ var _projects = {
         id: "sm-dashboard",
         type: "text",
         title: "Dashboard",
-        description: "Manage your products from Name, SKU, Price, Images, and even options. After add the products to a custom collection for better organization. Supports International Shipping and Tax. Remember to also set up your payments !"
+        description: "Fully integrated manager to lets the seller to add products and collections. Add incentive coupons and manage incoming orders by marking them with our easy fulfilment status. Set up shipping costs and tax, and remeber to set up the payments !"
       },
       {
         type: "image",
@@ -46,38 +46,58 @@ var _projects = {
         images: [
           {
             src: "images/store-manager/dashboard/product_list.jpg",
-            title: "Manage all Store Products"
+            title: "Products Dashboard",
+            description: "Add / Duplicate / Remove / Filter / Sort Products"
           },
           {
             src: "images/store-manager/dashboard/edit_product.jpg",
             title: "Edit Store Product",
-            description: "Update your Product Name, Price, Images, and Options."
+            description: "Update your Product Name, Price, Inventory, Images, and Options"
           },
           {
             src: "images/store-manager/dashboard/collections.jpg",
-            title: "Manage Store Collections"
+            title: "Store Collections Dasboard",
+            description: "Add / Duplicate / Remove Collections"
           },
           {
             src: "images/store-manager/dashboard/edit_collection.jpg",
             title: "Edit Store Collection",
-            description: "Organize your products by adding it a Collection"
+            description: "Organize products inside the collection."
+          },
+          {
+            src: "images/store-manager/dashboard/coupons.jpg",
+            title: "Coupons Dashboard",
+            description: "View / Remove / Filter / Sort Coupons"
+          },
+          {
+            src: "images/store-manager/dashboard/edit_coupon.jpg",
+            title: "Edit Coupons",
+            description: "Update your Coupon Name, Code, Type, Discount, Application, Valid Date, and Usuage"
           },
           {
             src: "images/store-manager/dashboard/orders.jpg",
-            title: "View Orders"
+            title: "Orders Dashboard",
+            description: "View / Archive / Filter / Sort Orders"
           },
           {
             src: "images/store-manager/dashboard/edit_order.jpg",
-            title: "View Order Status"
+            title: "Edit Orders",
+            description: "View Orders Details, Mark Payment, Shipingment, and Fulfillment. Send Shipping Tracking Number Email. Activity Log for all actions for order"
+          },
+          {
+            src: "images/store-manager/dashboard/abandon.jpg",
+            title: "Abandon Orders Dashboard",
+            description: "Manage Orders that will be submitted in the checkout, but has not gone through the payment process. Send a recovery email to the buyer so they can continue the checkout"
           },
           {
             src: "images/store-manager/dashboard/regions.jpg",
-            title: "Regions List"
+            title: "Regions Dashboard",
+            description: 'Add / Remove Region Rules'
           },
           {
             src: "images/store-manager/dashboard/edit_region.jpg",
             title: "Edit Region",
-            description: "Set up your shipping, in-store pickup, and tax"
+            description: "Set up Regions / Shipping / In-Store Pickup / Tax."
           },
           {
             src: "images/store-manager/dashboard/payments.jpg",
@@ -87,11 +107,12 @@ var _projects = {
           {
             src: "images/store-manager/dashboard/store_info.jpg",
             title: "Store Info",
-            description: "Enter your Store Information."
+            description: "Store Information - Store Name / Store Contact / Store Logo"
           },
           {
             src: "images/store-manager/dashboard/store_settings.jpg",
-            title: "Store Settings"
+            title: "Store Settings",
+            description: "Language / Currency / Google Analytics / Checkout Settings"
           },
         ]
       },
@@ -134,19 +155,19 @@ var _projects = {
         images: [
           {
             src: "images/store-manager/checkout/address.jpg",
-            title: ""
+            title: "Shipping Address"
           },
           {
             src: "images/store-manager/checkout/shipping.jpg",
-            title: ""
+            title: "Shipment Options"
           },
           {
             src: "images/store-manager/checkout/payment.jpg",
-            title: ""
+            title: "Payment Options"
           },
           {
             src: "images/store-manager/checkout/invoice.jpg",
-            title: ""
+            title: "Invoice"
           }
         ]
       }
@@ -176,7 +197,7 @@ var _projects = {
         id: "fm-dashboard",
         type: "text",
         title: "Dashboard",
-        description: "Manage all your files from images, audio, videos, and documents all in one place with the newly designed File Manager."
+        description: "Manage all your files from images, audio, videos, and documents all in one place with the newly designed File Manager. Organize your files into folders and share the folders to other users."
       },
       {
         type: "image",
@@ -184,28 +205,23 @@ var _projects = {
         images: [
           {
             src: "images/file-manager/dashboard/grid_view.jpg",
-            title: "Test 1",
-            description: "Description of Test 1 Goes Here"
+            title: "File Manager",
+            description: "Grid View"
           },
           {
             src: "images/file-manager/dashboard/list_view.jpg",
-            title: "Test 2",
-            description: "Description of Test 2 Goes Here"
+            title: "File Manager",
+            description: "List View"
           },
           {
             src: "images/file-manager/dashboard/preview.jpg",
-            title: "Test 2",
-            description: "Description of Test 2 Goes Here"
+            title: "File Manager",
+            description: "Quick Preview"
           },
           {
             src: "images/file-manager/dashboard/drag_drop_upload.jpg",
-            title: "Test 2",
-            description: "Description of Test 2 Goes Here"
-          },
-          {
-            src: "images/file-manager/dashboard/preview.jpg",
-            title: "Test 2",
-            description: "Description of Test 2 Goes Here"
+            title: "File Manager",
+            description: "Drag and Drop Upload"
           }
         ]
       },

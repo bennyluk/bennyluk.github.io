@@ -352,6 +352,7 @@ img {
     min-height: 300px;
 	background-position: 50%;
     background-repeat: no-repeat;
+		background-color: #9c9c9c;
 }
 
 .project-strip-image-bg {
