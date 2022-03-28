@@ -1,132 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Portfolio | Benny Luk</title>
+<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Benny Luk - Software Developer from Vancouver, BC</title>
 
-		<!-- Google Analytics -->
-		<script>
+        <meta name="title" content="Make Your Website Accessibile for Free with the Sienna Accessibility Widget.">
+        <meta name="description" content="A quick and easy free accessibility plugin for your website. Use the widget on your Squarespace, Wix, Weebly, Shopify or Wordpress website.">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Make Your Website Accessibile for Free with the Sienna Accessibility Widget.">
+        <meta name="twitter:description" content="A quick and easy free accessibility plugin for your website. Use the widget on your Squarespace, Wix, Weebly, Shopify or Wordpress website.">
+        <meta name="twitter:image:src" content="https://bennyluk.github.io/Sienna-Accessibility-Widget/banner.png">
+        <meta name="twitter:image:alt" content="Make Your Website Accessibile for Free with the Sienna Accessibility Widget.">
+        <meta property="og:title" content="Make Your Website Accessibile for Free with the Sienna Accessibility Widget." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bennyluk.github.io/Sienna-Accessibility-Widget">
+        <meta property="og:image" content="https://bennyluk.github.io/Sienna-Accessibility-Widget/banner.png" />
+        <meta property="og:description" content="A quick and easy free accessibility plugin for your website. Use the widget on your Squarespace, Wix, Weebly, Shopify or Wordpress website." />
+        <meta property="og:site_name" content="Make Your Website Accessibile for Free with the Sienna Accessibility Widget." />
+        <link rel="canonical" href="https://bennyluk.github.io/Sienna-Accessibility-Widget" />
+        <meta name="author" content="Benny Luk">
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://bennyluk.github.io/Sienna-Accessibility-Widget/#website",
+                        "url": "https://bennyluk.github.io/Sienna-Accessibility-Widget",
+                        "name": "Make Your Website Accessibile for Free with the Sienna Accessibility Widget.",
+                        "description": "A quick and easy free accessibility plugin for your website. Use the widget on your Squarespace, Wix, Weebly, Shopify or Wordpress website.",
+                        "inLanguage": "en"
+                    }
+                    ,{
+                        "@type": "WebPage",
+                        "@id": "https://bennyluk.github.io/Sienna-Accessibility-Widget/#website",
+                        "url": "https://bennyluk.github.io/Sienna-Accessibility-Widget",
+                        "name": "Make Your Website Accessibile for Free with the Sienna Accessibility Widget.",
+                        "description": "A quick and easy free accessibility plugin for your website. Use the widget on your Squarespace, Wix, Weebly, Shopify or Wordpress website.",
+                        "isPartOf": {
+                            "@id": "https://bennyluk.github.io/Sienna-Accessibility-Widget/#website"
+                        },
+                        "inLanguage": "en"
+                    }
+                ]
+            }
+        </script>
+        <meta name="format-detection" content="telephone=no" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+        <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+        <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+        <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+        <link  href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+        <link rel="stylesheet" href="./portfolio.css"/>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.css" integrity="sha512-yxWNfGm+7EK+hqP2CMJ13hsUNCQfHmOuCuLmOq2+uv/AVQtFAjlAJO8bHzpYGQnBghULqnPuY8NEr7f5exR3Qw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.min.css" integrity="sha512-Rck8F2HFBjAQpszOB9Qy+NVLeIy4vUOMB7xrp46edxB3KXs2RxXRguHfrJqNK+vJ+CkfvcGqAKMJTyWYBiBsGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
 			ga('create', 'UA-50342432-2', 'auto');
-			ga('set', 'appName', 'Portfolio');
-
 			ga('send', 'pageview');
 		</script>
-		<!-- End Google Analytics -->
+    </head>
+    <body>
+        <div id="portfolio"></div>
 
-		<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/>
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet" type="text/css">
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
-
-		 <link href="dist/portfolio.min.css" rel="stylesheet" type="text/css">
-	</head>
-	<body id="body">
-		<div id="wrap">
-			<section id="bg">
-				<video id="bg-vid" loop autoplay>
-					<source src="images/bg.mp4" type="video/mp4">
-					<source src="images/bg.ogv" type="video/ogg">
-					<source src="images/bg.webm" type="video/webm">
-				</video>
-			</section>
-			<header id="header">
-				<div class="center">
-					<a id="logo" href="#">
-						<img src= "images/logo.png" width="90px" height="90px" />
-					</a>
-					<nav id="nav">
-						<a id="mobile-menu" href="#">
-							<i class="fa fa-bars" aria-hidden="true"></i>
-						</a>
-						<ul id="menu">
-							<li id="menu-about" class="menu-item">
-								<a href="#/about">
-									About
-									<span class="menu-underline"></span>
-								</a>
-							</li>
-							<li id="menu-projects" class="menu-item">
-								<a href="#/projects">
-									Projects
-									<span class="menu-underline"></span>
-								</a>
-							</li>
-							<li id="menu-skills" class="menu-item">
-								<a href="#/skills">
-									Skills
-									<span class="menu-underline"></span>
-								</a>
-							</li>
-							<li id="menu-contact" class="menu-item">
-								<a href="#/contact">
-									Contact
-									<span class="menu-underline"></span>
-								</a>
-							</li>
-							<li class="menu-item">
-								<a href="/blog" target="_blank">
-									Blog
-									<span class="menu-underline"></span>
-								</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</header>
-			<section id="content">
-				<noscript>
-					<div id="noscript-msg">
-						JavaScript is not enabled !
-					</div>
-				</noscript>
-			</section>
-		</div>
-		<footer id="footer">
-			<div class='center'>
-				<div>
-					&copy; Benny 2018. Hosting provided by Github.
-				</div>
-				<ul id="footer-social-icons">
-					<li>
-						<a href="mailto:bennyluk.dev@gmail.com" target="_top" class="social-email">
-							<i class="fa fa-fw fa-envelope fa-2x"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://github.com/bennyluk" target="_blank" class="social-github">
-							<i class="fa fa-fw fa-github-square fa-2x"></i>
-						</a>
-					</li>
-					<li>
-						 <a href="https://ca.linkedin.com/in/benny-luk-55942a8a" target="_blank" class="social-linkedin">
-							<i class="fa fa-fw fa-linkedin-square fa-2x"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</footer>
-		<div>
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.2/backbone-min.js"></script>
-
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
-			
-			<script src="dist/portfolio.min.js"></script>
-		</div>
-	</body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.14/vue.min.js" integrity="sha512-XdUZ5nrNkVySQBnnM5vzDqHai823Spoq1W3pJoQwomQja+o4Nw0Ew1ppxo5bhF2vMug6sfibhKWcNJsG8Vj9tg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.5.3/vue-router.min.js" integrity="sha512-/QcUyef9r0LQzC+WtTNs+gJNacB+x20p1ZaPKSldF9Vu3m+uOmz0bBpPpsmHncv1ehuOCwnMXYydvl1KkW7Xow==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+        <!---
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js" integrity="sha512-2R4VJGamBudpzC1NTaSkusXP7QkiUYvEKhpJAxeVCqLDsgW4OqtzorZGpulE3eEA7p++U0ZYmqBwO3m+R2hRjA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js" integrity="sha512-SxO0cwfxj/QhgX1SgpmUr0U2l5304ezGVhc0AO2YwOQ/C8O67ynyTorMKGjVv1fJnPQgjdxRz6x70MY9r0sKtQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+        --->
+        <script src="./portfolio.js" defer></script>
+    </body>
 </html>
