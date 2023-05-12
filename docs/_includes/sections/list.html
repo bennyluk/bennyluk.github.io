@@ -13,7 +13,7 @@
     
     <div class="flex" style="gap:24px; flex-direction: column;margin: 50px 0;">
         {% for listItem in include.list %}
-            <div class="flex">
+            <div class="flex md-flex-column">
                 <div class="font-bold" style="min-width:400px;">{{ listItem.title }}</div>
                 <p>{{ listItem.description }}</p>
             </div>

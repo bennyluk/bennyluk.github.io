@@ -5,7 +5,7 @@ about: File Management Software
 description: Our file management app not only allows for efficient folder management, but also integrates all user media files into one centralized location, making it easier to reuse across multiple apps. We took it a step further by developing a custom media file delivery service that generates images based on their responsive breakpoints in real-time, ensuring optimal performance with caching.
 roles: Project Lead,Developer,Designer
 date: 2015
-excerpt: Create a stunning website with ease using our intuitive website builder that guarantees top-notch performance and SEO optimization.
+excerpt: File management software and file server that updates image types and transformations to keep your files up to date.
 solutions:
     -   title: Media Transforming
         description: We brought our own server to generate optimized media by developing a URL structure that determines the best image based on the aspect ratio, as well as supporting new formats like WebP and AVIF for optimal performance. Our server, powered by NodeJS, securely delivers images, videos, and other document formats.

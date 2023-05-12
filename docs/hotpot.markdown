@@ -6,7 +6,7 @@ description: Lead the developement of our in-house design language, Hot Pot, to 
 roles: Project Lead,Developer
 date: 2020-2022
 project: https://www.website.com/online-store-builder/
-excerpt: Create a stunning website with ease using our intuitive website builder that guarantees top-notch performance and SEO optimization.
+excerpt: An in-house design language to ensure consistency, avoid code duplication, and improve UI development for a smoother workflow.
 solutions:
     -   title: Pitching Idea
         description: Meeting with the ROI-focused CEO to push for a design language was challenging. I proposed bundling it with a new product, <a href="/caddy">File Manager</a>, and presented analytics data to showcase increased usage and engagement. This evidence-based approach effectively demonstrated the value of adopting a design language within the organization.

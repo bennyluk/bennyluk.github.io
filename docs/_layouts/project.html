@@ -6,71 +6,75 @@ layout: default
   {% include css/project.css %}
 </style>
 
-<div class="container">
-  <h1 style="margin-bottom:12px;">
-    {{ page.title }}
-  </h1>
-  
-  <div class="h4" style="margin-bottom:0;opacity: 0.8;">
-    {{ page.about }}
-  </div>
-
-  <div class="flex" style="margin-top: 64px;">
-    <div class="intro">
-      <div>
-        {{ page.description }}
-      </div>
-      {% if page.project %}
-        <div style="margin-top: 24px;">
-          <a href="{{ page.project }}" target="_blank" class="font-bold color-inherit underline-none flex items-center uppercase text-sm">
-            Discover
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px" style="margin-left:8px;">
-              <path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/>
-            </svg>
-          </a>
-        </div>
-      {% endif %}
+<div>
+  <div class="container">
+    <h1 style="margin-bottom:12px;">
+      {{ page.title }}
+    </h1>
+    
+    <div class="h4" style="margin-bottom:0;opacity: 0.8;">
+      {{ page.about }}
     </div>
-
-    <div>
-      {% 
-        include partials/list.html
-          title="Role"
-          list=page.roles
-      %}
-      {% if page.date %}
+  
+    <div class="flex md-flex-column" style="margin-top: 64px;">
+      <div class="intro">
+        <div>
+          {{ page.description }}
+        </div>
+        {% if page.project %}
+          <div style="margin-top: 24px;">
+            <a href="{{ page.project }}" target="_blank" class="font-bold color-inherit underline-none flex items-center uppercase text-sm">
+              Discover
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px" style="margin-left:8px;">
+                <path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/>
+              </svg>
+            </a>
+          </div>
+        {% endif %}
+      </div>
+  
+      <div>
         {% 
           include partials/list.html
-            title="Date"
-            list=page.date
+            title="Role"
+            list=page.roles
         %}
-      {% endif %}
+        {% if page.date %}
+          {% 
+            include partials/list.html
+              title="Date"
+              list=page.date
+          %}
+        {% endif %}
+      </div>
     </div>
   </div>
 
   {{ content }}
 
   <section>
-    <h2>
-      Explore Projects
-    </h2>
-    <div class="flex justify-between" style="gap: 18px;margin-top: 24px;">
-        {% for project in site.data.projects %}
-          <figure style="width: 100%;">
-            <a href="/{{ project.slug }}" title="{{ project.title }}">
-              {% 
-                include partials/image.html
-                  src=project.image
-                  alt=projecet.title
-              %}
-            </a>
-            <figcaption style="margin-top: 8px;">
-              <a href="/{{ project.slug }}" class="underline-none color-inherit">
-                {{ project.title }}
+    <div class="container">
+      <h2>
+        Explore Projects
+      </h2>
+      <div class="flex justify-between md-flex-column" style="gap: 18px;margin-top: 24px;">
+          {% for project in site.data.projects %}
+            <figure style="width: 100%;">
+              <a href="/{{ project.slug }}" title="{{ project.title }}">
+                {% 
+                  include partials/image.html
+                    src=project.image
+                    alt=projecet.title
+                %}
               </a>
-            </figcaption>
-          </figure>
-        {% endfor %}
+              <figcaption style="margin-top: 8px;">
+                <a href="/{{ project.slug }}" class="underline-none color-inherit">
+                  {{ project.title }}
+                </a>
+              </figcaption>
+            </figure>
+          {% endfor %}
+      </div>
     </div>
   </section>
 

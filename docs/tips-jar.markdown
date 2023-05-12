@@ -6,7 +6,7 @@ description: "Our eCommerce platform enables clients using our website builder t
 roles: Lead Developer, Designer
 date: 2016
 project: https://www.website.com/online-store-builder/
-excerpt: Create a stunning website with ease using our intuitive website builder that guarantees top-notch performance and SEO optimization.
+excerpt: Start selling your ecommerce products easily with our user-friendly store management software.
 solutions:
     -   title: Lead Developer
         description: As the lead developer, Store Manager was my first project. It was a challenging yet rewarding experience that taught me valuable lessons in project direction and architecture. Despite the complexity, the app became widely popular and continues to be used today.

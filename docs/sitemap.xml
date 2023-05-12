@@ -6,7 +6,7 @@ sitemap:
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% for post in site.posts %}
-    {% unless post.published == false %}
+    {% unless page.sitemap.exclude == "yes" %}
       <url>
         <loc>{{ post.url | remove: ".html" | absolute_url }}</loc>
         {% if post.sitemap.lastmod %}
@@ -30,7 +30,7 @@ sitemap:
     {% endunless %}
   {% endfor %}
   {% for page in site.pages %}
-    {% unless page.sitemap.exclude == "yes" or page.url == "feed.xml" or page.name == "404.html" %}
+    {% unless page.sitemap.exclude == "yes" or page.url == "/feed.xml" or page.name == "404.html" %}
     <url>
       <loc>{{ page.url | remove: "index.html" | remove: ".html" | absolute_url }}</loc>
       {% if page.sitemap.lastmod %}

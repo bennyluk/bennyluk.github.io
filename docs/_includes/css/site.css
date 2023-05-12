@@ -54,17 +54,15 @@ section {
     padding: 65px 0;
 }
 
+header {
+    padding: 40px 0;
+}
+
 .container {
     max-width: 1280px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-}
-
-header {
-    text-transform: uppercase;
-    padding: 40px 120px;
-    font-size: 0.8rem;
 }
 
 header a {
@@ -81,6 +79,16 @@ img {
     display: block;
     width: 100%;
     aspect-ratio: 16/8;
+}
+
+@media screen and (max-width: 720px) {
+    header {
+        padding: 20px 0;
+    }
+
+    main {
+        margin-top: 20px;
+    }
 }
 
 {% include css/helper.css %}

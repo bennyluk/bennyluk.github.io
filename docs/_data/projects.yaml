@@ -1,16 +1,44 @@
 -   title: BentoBox
-    description: Responsive Site Builder
-    slug: "bentobox"
+    desc: Responsive Site Builder
+    slug: bentobox
     image: https://lh3.googleusercontent.com/NiWuqsB7hrJpIg6lUd7kYUi4IZmdxaEuiS5bZod2xrPwZqhhKU1NciQ5XyiQSs4P4BXMlGouIQteuxeVGJIbm96BwUMHVqWrwo2Vy8-zOMGlfRKsjAcrd_dL2SGDRfZlsc7Q2B81jWE
+    theme:
+        background: "#f5f8ff"
+        color: "#333"
+        primaryColor: "#4f939c"
+        link: "#4f939c"
 -   title: Hot Pot
-    description: In-House Design Language
-    slug: "hotpot"
+    desc: Design Language
+    slug: hotpot
     image: https://lh3.googleusercontent.com/BM652Ag7_scNNLzkY1ZsIIo74Zlp90ugpQks5Gndxr-a86kVcfsfwF5Mee3shbHUV8aOnmqfKae48sUi7LoAQZu20yR-eHcwSpCo8EPVxuP5auUwwQA5yNx_vJsUU47VY32dtuIN20g
--   title: Editor
-    description: Drag n drop editor
-    slug: "editor"
+    theme:
+        background: "#2e2e2e"
+        color: "#FFF"
+        primaryColor: "#4286F5"
+        link: "#4286F5"
+-   title: Site Editor
+    desc: Drag & Drop Site Builder
+    slug: site-editor
     image: https://lh3.googleusercontent.com/BOX_eogw-CsLTaBBxL_PdmYqIpia8R9eKAktgaARN7qImwVUkeNH_i0wbCfmakO5yKc2QHJP80FueZnDTLUDIM863r5X393TvFzyNZdAEQ7ADQx9ybLnZhta1YsHG0mM2pOXzaKivx0
--   title: Store Manager
-    description: In-House Design Language
-    slug: "receipt-jar"
+    theme:
+        background: "#fff"
+        color: "#000"
+        primaryColor: "#077df8"
+-   title: Tips Jar
+    desc: eCommerce CMS Software
+    slug: tips-jar
     image: https://lh3.googleusercontent.com/JWF2khnmazL9BJoiSPizy_-ponSrOuaB7DUKe5FWKX7F7UB4yslYpkIYZYXgnjQmCh8dbwKquaZe4-KdsDQAdNb5o4YvEYdYCO_bdM4UM2HUduYWUjdXubLMtRmDPg6H7PvUvCxIbUQ
+    theme:
+        background: "rgb(21, 49, 54)"
+        color: "#FFF"
+        primaryColor: "#b9966e"
+        link: "#b9966e"
+-   title: Caddy
+    desc: File Management Software
+    slug: caddy
+    image: https://lh3.googleusercontent.com/JWF2khnmazL9BJoiSPizy_-ponSrOuaB7DUKe5FWKX7F7UB4yslYpkIYZYXgnjQmCh8dbwKquaZe4-KdsDQAdNb5o4YvEYdYCO_bdM4UM2HUduYWUjdXubLMtRmDPg6H7PvUvCxIbUQ
+    theme:
+        background: "#0e2382"
+        color: "#FFF"
+        primaryColor: "#fdeaad"
+        link: "#fdeaad"

@@ -38,3 +38,14 @@
     border-radius: 50%;
     margin-right: 5px;
 }
+
+@media screen and (max-width: 768px) {
+    .md-flex-column {
+        flex-direction: column;
+    }
+
+    .intro {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+}

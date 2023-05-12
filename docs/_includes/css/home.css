@@ -1,0 +1,125 @@
+body,
+h2 {
+    transition: 0.3s ease;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  header svg {
+    display: none;
+  }
+  
+  h2 {
+    font-size: 5rem;
+    margin-bottom:0;
+  }
+  
+  .project-content {
+      position: fixed;
+      top: 200px;
+      left: 120px;
+      z-index: 2;
+  }
+  
+  .project-images {
+      padding: 12vw 0;
+      position: relative;
+      margin-left: calc(50% - 100px);
+  }
+  
+  .image-wrapper {
+      width: 150px;
+      padding-bottom: 60px;
+      transform: scale(0.9);
+      transition: 0.6s ease all;
+      filter: grayscale(90%) blur(0.5px);
+      transform-origin: 50px 50px;
+      transform-origin: right;
+      cursor: pointer;
+  }
+  
+  .image-wrapper.active {
+      transform: scale(1);
+      filter: grayscale(0%) blur(0);
+  }
+  
+  .image-wrapper img {
+      width: 45vw;
+  }
+  
+  @keyframes float {
+      0% {
+          box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+          transform: translatey(0px);
+      }
+  
+      50% {
+          box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+          transform: translatey(-20px);
+      }
+  
+      100% {
+          box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+          transform: translatey(0px);
+      }
+  }
+  
+  
+  @media screen and (max-width: 960px) {
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 16px;
+    }
+
+    .project-content a {
+        justify-content: center;
+    }
+
+      .project-content-container {
+          display: flex;
+          flex-direction: column-reverse;
+      }
+  
+      .project-content {
+          position: relative;
+          top: 0;
+          text-align: center;
+          margin-top: 30px;
+          left: 0;
+      }
+  
+      .project-content a {
+          margin-bottom: 160px;
+      }
+  
+      .project-images {
+          padding: 15px 0;
+          margin-left: 0;
+          display: flex;
+          overflow-x: scroll;
+      }
+  
+      .image-wrapper {
+          filter: none !important;
+          transform: none !important;
+          padding: 0;
+          width: 100%;
+          margin-right: 100px;
+      }
+  
+      .image-wrapper img {
+          width: calc(100vw - 20px);
+      }
+  
+      .image-wrapper:last-child {
+          margin-right: 0;
+      }
+
+      header {
+        position: relative;
+      }
+  }

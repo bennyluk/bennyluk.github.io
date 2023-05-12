@@ -5,7 +5,7 @@ about: Drag & Drop Site Builder
 description: The main product of the business is a WYSIWYG site builder that allows users to add elements to their site page and adjust the element settings or styling without any prior coding knowledge.
 roles: Senior Developer,Designer
 date: 2016-2022
-excerpt: Create a stunning website with ease using our intuitive website builder that guarantees top-notch performance and SEO optimization.
+excerpt: Unleash your creativity with our drag & drop website builder - create stunning websites for any industry with ease.
 solutions:
     -   title: Ease of Use
         description: To address complaints from clients about our editor being too difficult to use, we added alignment guides and rulers, and <a href="/hotpot">updated the UI</a> to focus on core features. These changes significantly improved the user experience and served as inspiration for our new site editor, <a href="/bentobox">Bentobox</a>.

@@ -1,7 +1,7 @@
 ---
 layout: project
 title: BentoBox
-about: Modern Responsive Site Builder
+about: Responsive Site Builder
 description: "BentoBox is a website builder that streamlines web design in just 15 minutes. As the project leader of the development and design team, I prioritized simplicity, functionality, and beautiful design to create a platform that meets the needs of busy site owners."
 roles: Project Lead,Developer,Designer
 date: 2022
