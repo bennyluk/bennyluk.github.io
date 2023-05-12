@@ -1,0 +1,79 @@
+{% assign title = site.title %}
+{% if page.title %}
+    {% if page.excerpt %}
+        {% capture title %}{{ page.title }} - {{ page.excerpt }} - {{ site.title }}{% endcapture %}
+    {% else %}
+        {% capture title %}{{ page.title }} - {{ site.title }}{% endcapture %}
+    {% endif %}
+{% endif %}
+
+{% assign description = site.description %}
+{% if page.excerpt %}
+    {% assign description = page.excerpt %}
+{% endif %}
+
+
+<meta charset="utf-8" />
+{% if page.name == "404.html" %}
+    <meta name="robots" content="noindex">
+{% endif %}
+<meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=yes, viewport-fit=cover" name="viewport"/>
+
+<title>{{ title }}</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<meta content="{{ description }}" name="description" />
+<meta content="" name="keywords" />
+<meta content="Benny Luk" name="author" />
+<meta content="{{ site.locale }}" name="language" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="IE=edge" httpEquiv="X-UA-Compatible" />
+
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
+
+<meta content="website" property="og:type" />
+<meta content="{{ site.canonical }}/icons/og-image.png" property="og:image" />
+<meta content="{{ site.title }}" property="og:site_name" />
+
+<meta content="{{ title }}" property="og:title" />
+<meta content="{{ site.url }}" property="og:url" />
+
+<meta content="{{ description }}" property="og:description" />
+<meta content="{{ site.locale }}" property="og:local" />
+
+<link href="{{ site.canonical }}/favicon.ico" rel="icon" type="image/x-icon" />
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "@id": "{{ site.url }}/#website",
+                "url": "{{ site.url }}",
+                "name": "{{ site.title }}",
+                "description": "{{ site.description }}",
+                "inLanguage": "en"
+            },
+            {
+                "@type": "WebPage",
+                "@id": "{{ site.url }}{{ page.url | replace:'index.html',''}}/#webpage",
+                "url": "{{ site.url }}{{ page.url | replace:'index.html',''}}",
+                "description": "{{ description }}",
+                "name": "{{ title }}",
+                "isPartOf": {
+                    "@id": "{{ site.url }}/#website"
+                },
+                "inLanguage": "en"
+            }
+        ]
+    }
+</script>
+
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Playfair+Display:wght@700&display=swap">
+<link media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+{% include theme.html %}

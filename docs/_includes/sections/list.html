@@ -1,0 +1,22 @@
+<section class="container">
+    {% if include.number %}
+        <div class="number">
+        {{ include.number }}
+        </div>
+    {% endif %}
+
+    {% if include.title %}
+        <h2>
+            {{ include.title }}
+        </h2>
+    {% endif %}
+    
+    <div class="flex" style="gap:24px; flex-direction: column;margin: 50px 0;">
+        {% for listItem in include.list %}
+            <div class="flex">
+                <div class="font-bold" style="min-width:400px;">{{ listItem.title }}</div>
+                <p>{{ listItem.description }}</p>
+            </div>
+        {% endfor %}
+    </div>      
+</section>

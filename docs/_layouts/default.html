@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.locale }}">
+  {% include head.html %}
+  <body>
+    <a name="top"></a>
+    <header>
+      <div class="flex items-center justify-between container">
+        <div>
+          <a href="/" class="flex items-center justify-center color-inherit" style="white-space: nowrap;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;margin-right:12px;">
+              <path d="m12 5.69 5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3 2 12h3v8h6v-6h2v6h6v-8h3"/>
+            </svg>
+            <span style="font-size: 1.06rem;">
+              Benny Luk
+            </span>
+          </a>
+        </div>
+        {% if false %}
+          <div class="flex" style="gap: 24px;">
+            <a href="#">
+              About
+            </a>
+            <a href="#">
+              Blog
+            </a>
+          </div>
+        {% endif %}
+      </div>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <div>
+      <a href="#top" class="flex items-center justify-center top-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/>
+        </svg>
+      </a>
+    </div>
+  </body>
+</html>

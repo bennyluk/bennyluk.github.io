@@ -1,0 +1,12 @@
+p {
+    margin-bottom: 18px;
+}
+
+.post {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.content {
+    margin-bottom: 32px;
+}

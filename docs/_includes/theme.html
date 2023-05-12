@@ -1,0 +1,21 @@
+<style>
+    {% include css/reset.css %}
+    {% include css/site.css %}
+
+    {% if page.theme %}
+        html, body {
+            {% if page.theme.color %}
+                --text-color: {{page.theme.color}};
+            {% endif %}
+            {% if page.theme.primaryColor %}
+                --primary-color: {{page.theme.primaryColor}};
+            {% endif %}
+            {% if page.theme.background %}
+                --background-color: {{page.theme.background}};
+            {% endif %}
+            {% if page.theme.link %}
+                --link-color: {{page.theme.link}};
+            {% endif %}
+    {% endif %}
+</style>
+

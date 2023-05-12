@@ -1,0 +1,47 @@
+<section class="container">
+    <div class="flex">
+        {% if include.tech %}
+            <div style="min-width:220px">
+                {% 
+                    include partials/list.html
+                        title="Technology"
+                        list=include.tech
+                %}
+            </div>
+        {% endif %}
+        {% if include.front %}
+            <div style="min-width:220px">
+                {% 
+                    include partials/list.html
+                        title="Frontend Stack"
+                        list=include.front
+                %}
+            </div>
+        {% endif %}
+        {% if include.back %}
+            <div style="min-width:220px">
+                {% 
+                    include partials/list.html
+                        title="Frontend Stack"
+                        list=include.back
+                %}
+            </div>
+        {% endif %}
+        {% if false %}
+            <div style="min-width:200px">
+                {% 
+                    include partials/list.html
+                        title="Developers"
+                        list=include.dev
+                %}
+            </div>
+            <div style="min-width:200px">
+                {% 
+                    include partials/list.html
+                        title="Designers"
+                        list=include.design
+                %}
+            </div>
+        {% endif %}
+    </div>
+</section>

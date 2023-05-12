@@ -1,0 +1,17 @@
+<div style="margin-bottom: 18px;">
+    {% if include.title %}
+        <div>
+            <b class="uppercase text-sm">
+            {{ include.title }}
+            </b>
+        </div>
+    {% endif %}
+    <div>
+        {% assign list = include.list | split: ',' %}
+        {% for item in list %}
+            <div>
+                {{ item }}
+            </div>
+        {% endfor %}
+    </div>
+</div>

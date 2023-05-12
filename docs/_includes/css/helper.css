@@ -1,0 +1,35 @@
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.color-inherit {
+    color: inherit !important;
+    fill: inherit !important
+}
+
+b,
+.font-bold {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.underline-none {
+  text-decoration: none;
+}
+
+ 

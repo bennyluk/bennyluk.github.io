@@ -1,0 +1,18 @@
+<section class="container">
+    <figure>
+        <iframe 
+            src="{{ include.src }}" 
+            frameborder="0"
+            loading="lazy"
+            name="{{ include.caption }}"
+            style="aspect-ratio: 16/8;width:100%;"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen="allowfullscreen"></iframe>
+        
+        {% if include.caption %}
+            <figcaption style="margin-top:12px;text-align:center;font-style: italic;" class="text-sm">
+                <i>{{ include.caption }}</i>
+            </figcaption>
+        {% endif %}
+    </figure>
+</section>

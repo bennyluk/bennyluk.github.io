@@ -1,0 +1,21 @@
+h1,
+h2 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-family: var(--header-font, "Playfair Display");
+    line-height: 1.4em;
+    margin-bottom: 20px;
+}
+
+.h4 {
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: .8rem;
+}
+
+.text-sm {
+    font-size: .9rem;
+}

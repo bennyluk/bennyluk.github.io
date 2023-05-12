@@ -1,0 +1,115 @@
+---
+layout: default
+---
+
+<style>
+  
+.project-content {
+    position: fixed;
+    top: 200px;
+    left: 120px;
+    z-index: 2;
+}
+
+.project-images {
+    padding: 12vw 0;
+    position: relative;
+    margin-left: calc(50% - 100px);
+}
+
+.image-wrapper {
+    width: 150px;
+    padding-bottom: 60px;
+    transform: scale(0.9);
+    transition: 0.6s ease all;
+    filter: grayscale(90%) blur(0.5px);
+    transform-origin: 50px 50px;
+    transform-origin: right;
+    cursor: pointer;
+}
+
+.image-wrapper.active {
+    transform: scale(1);
+    filter: grayscale(0%) blur(0);
+}
+
+.image-wrapper img {
+    width: 45vw;
+}
+
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+        transform: translatey(-20px);
+    }
+
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+}
+</style>
+
+
+<style>
+  header {
+    position: fixed;
+    top: 0;
+  }
+
+  header svg {
+    display: none;
+  }
+</style>
+
+<div class="container">
+  <div class="project-content-container">
+    <div class="project-content">
+        <h2 style="font-size: 5rem;margin-bottom:0;">Builder</h2>
+        <p>Responsive Website Builder</p>
+        <a href="#/editor" class="flex items-center color-inherit underline-none" style="margin-top:42px;">
+          <span class="font-bold uppercase text-sm">
+            Open Project
+          </span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="margin-left: 8px;height: 24px;">
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 4l-1.4 1.4 5.6 5.6H4v2h12.2l-5.6 5.6L12 20l8-8z"></path>
+          </svg>
+        </a>
+    </div>
+    <div class="project-images">
+      {% for project in site.data.projects %}
+        <div class="image-wrapper active">
+            <a href="/bentobox" class="">
+                <img src="https://lh3.googleusercontent.com/NiWuqsB7hrJpIg6lUd7kYUi4IZmdxaEuiS5bZod2xrPwZqhhKU1NciQ5XyiQSs4P4BXMlGouIQteuxeVGJIbm96BwUMHVqWrwo2Vy8-zOMGlfRKsjAcrd_dL2SGDRfZlsc7Q2B81jWE=w768" alt="Builder" class="float1" />
+            </a>
+        </div>
+        <div class="image-wrapper">
+            <a href="#/hotpot" class="">
+                <img src="https://lh3.googleusercontent.com/BM652Ag7_scNNLzkY1ZsIIo74Zlp90ugpQks5Gndxr-a86kVcfsfwF5Mee3shbHUV8aOnmqfKae48sUi7LoAQZu20yR-eHcwSpCo8EPVxuP5auUwwQA5yNx_vJsUU47VY32dtuIN20g=w768" alt="Builder" class="float1" />
+            </a>
+        </div>
+        <div class="image-wrapper">
+            <a href="#/drag-n-drop-editor" class="">
+                <img src="https://lh3.googleusercontent.com/BOX_eogw-CsLTaBBxL_PdmYqIpia8R9eKAktgaARN7qImwVUkeNH_i0wbCfmakO5yKc2QHJP80FueZnDTLUDIM863r5X393TvFzyNZdAEQ7ADQx9ybLnZhta1YsHG0mM2pOXzaKivx0=w768" alt="Builder" class="float1" />
+            </a>
+        </div>
+        <div class="image-wrapper">
+            <a href="#/ecommerce" class="">
+                <img src="https://lh3.googleusercontent.com/JWF2khnmazL9BJoiSPizy_-ponSrOuaB7DUKe5FWKX7F7UB4yslYpkIYZYXgnjQmCh8dbwKquaZe4-KdsDQAdNb5o4YvEYdYCO_bdM4UM2HUduYWUjdXubLMtRmDPg6H7PvUvCxIbUQ=w768" alt="Builder" class="float1" />
+            </a>
+        </div>
+      {% endfor %}
+    </div>
+</div>
+
+<script>
+  (() => {
+    console.log("what the fuck")
+  })();
+</script>

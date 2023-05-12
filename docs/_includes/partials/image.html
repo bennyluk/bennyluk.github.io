@@ -1,0 +1,13 @@
+{% assign widths = '320,640,960,1280' | split: ',' %}
+{% assign srcset = '' %}
+{% for width in widths %}
+  {% assign url = include.src | append: '=w' | append: width %}
+  {% assign srcset = srcset | append: url | append: ' ' | append: width | append: 'w, ' %}
+{% endfor %}
+{% assign srcset = srcset | remove_last: ',' %}
+
+<img 
+    src="{{ include.src }}=w1280"
+    srcset="{{ srcset }}"
+    loading="lazy"
+    alt="{{ include.alt }}">
