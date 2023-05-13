@@ -52,6 +52,7 @@ layout: default
 
   {{ content }}
 
+  {% if false %}
   <section>
     <div class="container">
       <h2>
@@ -59,24 +60,29 @@ layout: default
       </h2>
       <div class="flex justify-between md-flex-column" style="gap: 18px;margin-top: 24px;">
           {% for project in site.data.projects %}
-            <figure style="width: 100%;">
-              <a href="/{{ project.slug }}" title="{{ project.title }}">
-                {% 
-                  include partials/image.html
-                    src=project.image
-                    alt=projecet.title
-                %}
-              </a>
-              <figcaption style="margin-top: 8px;">
-                <a href="/{{ project.slug }}" class="underline-none color-inherit">
-                  {{ project.title }}
+            {% if page.url == product.slug %}
+              <figure style="width: 100%;">
+                <a href="/{{ project.slug }}" title="{{ project.title }}">
+                  {% 
+                    include partials/image.html
+                      src=project.image
+                      alt=projecet.title
+                  %}
                 </a>
-              </figcaption>
-            </figure>
+                <figcaption style="margin-top: 8px;">
+                  <a href="/{{ project.slug }}" class="underline-none color-inherit">
+                    {{ project.title }}
+                  </a>
+                </figcaption>
+              </figure>
+            {% endif %}
           {% endfor %}
       </div>
     </div>
   </section>
+  {% endif %}
+
+  
 
   <footer class="text-sm">
     <section>

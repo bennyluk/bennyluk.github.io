@@ -61,20 +61,23 @@ theme:
         font-weight: 600;
     }
 </style>
-<section class="font-section flex">
-   <div style="min-width: 380px;">
-      <div class="h4">Typography</div>
-      <div style="color: #FFF;font-size:2.5rem;" class="font-bold">Nunito Sans<br>Aa123</div>
-   </div>
-   <div>
-        <div class="h4">Colors</div>
-        <div class="colors">
-            <div style="background: rgb(66, 134, 245);">#4286F5</div>
-            <div style="background: green;">#32323</div>
-            <div style="background: yellow;color:#000;">#423432</div>
-            <div style="background: red;">#89781</div>
+<section>
+    <div class="container flex">
+        <div style="min-width: 380px;">
+            <div class="h4">Typography</div>
+            <div style="color: #FFF;font-size:2.5rem;" class="font-bold">Nunito Sans<br>Aa123</div>
         </div>
-   </div>
+        <div>
+                <div class="h4">Colors</div>
+                <div class="colors">
+                    <div style="background: rgb(66, 134, 245);">#4286F5</div>
+                    <div style="background: green;">#32323</div>
+                    <div style="background: yellow;color:#000;">#423432</div>
+                    <div style="background: red;">#89781</div>
+                </div>
+        </div>
+    </div>
+   
 </section>
 
 
