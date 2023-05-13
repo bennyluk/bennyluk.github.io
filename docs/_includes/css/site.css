@@ -89,6 +89,11 @@ img {
     main {
         margin-top: 20px;
     }
+
+    section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }
 
 {% include css/helper.css %}
