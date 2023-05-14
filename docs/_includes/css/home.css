@@ -49,6 +49,7 @@ h2 {
   
   .image-wrapper img {
       width: 45vw;
+      aspect-ratio: 16 / 9;
   }
   
   @keyframes float {
